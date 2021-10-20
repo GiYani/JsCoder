@@ -1,5 +1,5 @@
 /////calculo IMC
-
+/*
 let nombre = prompt("¿cual es tu nombre?");
 alert(`hola ${nombre}`);
 
@@ -114,3 +114,5 @@ const pan2 = new panificados("pan lactal bimbo", 90, 3.6, 0.8);
 const pan3 = new panificados("pan pancho bimbo", 110, 3.2, 1.2);
 pan2.mostrar();
 pan3.mostrar();
+
+*/
