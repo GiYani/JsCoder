@@ -34,7 +34,7 @@ const darkM = () => {
     $("p").css("color", "white")
     $("a").css("color", "white")
     $("#cambio2").replaceWith('<img id="cambio2" src="imagenes/fruitBlanco.png" alt= "imagen frutas blanca" class=" m-auto ">')
-    $("#cambi31").replaceWith('<img id="cambio3" src="imagenes/pesoBlanco.png" alt= "imagen balanza blanca" class=" m-auto ">');
+    $("#cambio3").replaceWith('<img id="cambio3" src="imagenes/peso.png" alt= "imagen balanza blanca" class=" m-auto ">');
 
     localStorage.setItem("modeLB", "dark")
 }
@@ -44,7 +44,7 @@ const lightM = () => {
     $("p").css("color", "black")
     $("a").css("color", "black")
     $("#cambio2").replaceWith('<img id="cambio2" src="imagenes/fruits.png" alt= "imagen frutas negra" class=" m-auto ">')
-    $("#cambi31").replaceWith('<img id="cambio3" src="imagenes/peso.png" alt= "imagen balanza negra" class=" m-auto ">');
+    $("#cambio3").replaceWith('<img id="cambio3" src="imagenes/peso.png" alt= "imagen balanza negra" class=" m-auto ">');
 
     localStorage.setItem("modeLB", "light")
 }
