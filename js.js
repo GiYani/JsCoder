@@ -114,5 +114,44 @@ const pan2 = new panificados("pan lactal bimbo", 90, 3.6, 0.8);
 const pan3 = new panificados("pan pancho bimbo", 110, 3.2, 1.2);
 pan2.mostrar();
 pan3.mostrar();
-
 */
+
+const darkM = () => {
+    $("body").css("background-color", "black")
+    $("h3").css("color", "white")
+    $("h5").css("color", "white")
+    $("p").css("color", "white")
+    $("a").css("color", "white")
+
+    localStorage.setItem("modeLB", "dark")
+}
+const lightM = () => {
+    $("body").css("background-color", "white")
+    $("h3").css("color", "black")
+    $("h5").css("color", "black")
+    $("p").css("color", "black")
+    $("a").css("color", "black")
+
+    localStorage.setItem("modeLB", "light")
+}
+
+$("#modeLB").on("click", () => {
+    if (localStorage.getItem("modeLB") === "dark") {
+        lightM()
+    } else {
+        darkM()
+    }
+
+})
+
+
+const changeImagen = () => {
+    let image = document.getElementById('myImage');
+    if (image.src.match("bulbon")) {
+        image.src = "pic_bulboff.png";
+
+    } else {
+        image.src = "pic_bulbon.png";
+
+    }
+}

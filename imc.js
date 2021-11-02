@@ -27,3 +27,29 @@ document.getElementById("btn").addEventListener("click", () => {
     imc()
 
 })
+
+const darkM = () => {
+    $("body").css("background-color", "black")
+    $("h3").css("color", "white")
+    $("p").css("color", "white")
+    $("a").css("color", "white")
+
+    localStorage.setItem("modeLB", "dark")
+}
+const lightM = () => {
+    $("body").css("background-color", "white")
+    $("h3").css("color", "black")
+    $("p").css("color", "black")
+    $("a").css("color", "black")
+
+    localStorage.setItem("modeLB", "light")
+}
+
+$("#modeLB").on("click", () => {
+    if (localStorage.getItem("modeLB") === "dark") {
+        lightM()
+    } else {
+        darkM()
+    }
+
+})
