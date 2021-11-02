@@ -122,9 +122,9 @@ const darkM = () => {
     $("h5").css("color", "white")
     $("p").css("color", "white")
     $("a").css("color", "white")
-    $("#cambio1").replaceWith('<img id="cambio1" src="imagenes/bodyblanco.png" alt= "imgen silueta blanca" class=" m-auto ">');
-    $("#cambio2").replaceWith('<img id="cambio2" src="imagenes/fruitsBlanco.png" alt= "imagen frutas negra" class=" m-auto ">');
-    $("#cambi31").replaceWith('<img id="cambio3" src="imagenes/pesoBlanco.png" alt= "imagen balanza negra" class=" m-auto ">');
+    $("#cambio1").replaceWith('<img id="cambio1" src="imagenes/bodyblanco.png" alt= "imgen silueta blanca" class=" m-auto ">')
+    $("#cambio2").replaceWith('<img id="cambio2" src="imagenes/fruitBlanco.png" alt= "imagen frutas negra" class=" m-auto ">')
+    $("#cambi31").replaceWith('<img id="cambio3" src="imagenes/pesoBlanco.png" alt= "imagen balanza blanca" class=" m-auto ">')
 
     localStorage.setItem("modeLB", "dark")
 }
@@ -134,9 +134,9 @@ const lightM = () => {
     $("h5").css("color", "black")
     $("p").css("color", "black")
     $("a").css("color", "black")
-    $("#cambio1").replaceWith('<img id="cambio1" src="/imagenes/body.png" alt= " imagen silueta negra" class=" m-auto ">')
-    $("#cambio2").replaceWith('<img id="cambio2" src="imagenes/fruits.png" alt= "imagen frutas negra" class=" m-auto ">');
-    $("#cambi31").replaceWith('<img id="cambio3" src="imagenes/peso.png" alt= "imagen balanza negra" class=" m-auto ">');
+    $("#cambio1").replaceWith('<img id="cambio1" src="imagenes/body.png" alt= " imagen silueta negra" class=" m-auto ">')
+    $("#cambio2").replaceWith('<img id="cambio2" src="imagenes/fruits.png" alt= "imagen frutas negra" class=" m-auto ">')
+    $("#cambi31").replaceWith('<img id="cambio3" src="imagenes/peso.png" alt= "imagen balanza negra" class=" m-auto ">')
 
 
     localStorage.setItem("modeLB", "light")
