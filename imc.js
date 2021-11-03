@@ -28,32 +28,33 @@ document.getElementById("btn").addEventListener("click", () => {
 
 })
 
-const darkM = () => {
-    $("body").css("background-color", "black")
-    $("h3").css("color", "white")
-    $("p").css("color", "white")
-    $("a").css("color", "white")
-    $("#cambio2").replaceWith('<img id="cambio2" src="imagenes/fruitBlanco.png" alt= "imagen frutas blanca" class=" m-auto ">')
-    $("#cambio3").replaceWith('<img id="cambio3" src="imagenes/peso.png" alt= "imagen balanza blanca" class=" m-auto ">');
 
-    localStorage.setItem("modeLB", "dark")
-}
-const lightM = () => {
-    $("body").css("background-color", "white")
-    $("h3").css("color", "black")
-    $("p").css("color", "black")
-    $("a").css("color", "black")
-    $("#cambio2").replaceWith('<img id="cambio2" src="imagenes/fruits.png" alt= "imagen frutas negra" class=" m-auto ">')
-    $("#cambio3").replaceWith('<img id="cambio3" src="imagenes/peso.png" alt= "imagen balanza negra" class=" m-auto ">');
+$('.theme').click(function() {
+    if ($('input.theme').is(':checked')) {
+        $('.tema').attr('href', 'dark.css')
 
-    localStorage.setItem("modeLB", "light")
-}
-
-$("#modeLB").on("click", () => {
-    if (localStorage.getItem("modeLB") === "dark") {
-        lightM()
     } else {
-        darkM()
+        $('.tema').attr('href', 'light.css')
     }
 
 })
+
+const btnS = document.querySelector('.theme')
+btnS.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+
+
+
+    if (document.body.classList.contains('dark')) {
+        localStorage.setItem('dark-mode', 'true')
+    } else {
+        localStorage.setItem('dark-mode', 'false')
+    }
+});
+
+
+if (localStorage.getItem('dark-mode') === 'true') {
+    document.body.classList.add('dark');
+} else {
+    document.body.classList.remove('dark');
+}

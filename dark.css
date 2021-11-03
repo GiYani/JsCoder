@@ -1,0 +1,27 @@
+body {
+    background-color: black
+}
+
+h3 {
+    color: white
+}
+
+p {
+    color: white
+}
+
+a {
+    color: white
+}
+
+#cambio1 {
+    content: url(./imagenes/bodyblanco.png);
+}
+
+#cambio2 {
+    content: url(./imagenes/fruitBlanco.png);
+}
+
+#cambio3 {
+    content: url(./imagenes/pesoB.png);
+}
