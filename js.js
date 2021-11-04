@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 $('.theme').on("click", () => {
+=======
+
+$('.theme').click(function() {
+>>>>>>> 6c883abce90080da92b30ebccafd4b507be56320
     if ($('input.theme').is(':checked')) {
         $('.tema').attr('href', 'dark.css')
 
