@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body id="Body">
     <!-- Navigation-->
     <nav class="navbar navbar-light static-top">
         <div class="container">
@@ -26,9 +26,9 @@
                 <p>Body & Health</p>
             </a>
             <label class="switch">
-                <input type="checkbox"  class='theme' >
-                <span class="slider round"></span>
-            </label>
+                <input type="checkbox" onclick="darkLight()" id="checkBox" >
+                <span class="slider"></span>
+              </label>
         </div>
     </nav>
     <!-- Masthead-->
@@ -38,37 +38,9 @@
                 <div class="col-xl-6">
                     <div class="text-center text-white">
                         <!-- Page heading-->
-                        <h1 class="mb-5">Informacion Nutricional de cientos de alimentos </h1>
+                        <h1 class="mb-5">Información Nutricional de cientos de productos</h1>
 
-                        <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <div class="row">
-                                <div class="col">
-                                    <input class="form-control form-control-lg" id="emailAddressBelow" type="email" placeholder="Email" data-sb-validations="required,email" />
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">email.</div>
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Correo no valido.</div>
-                                </div>
-                                <div class="col-auto"><button class="btn btn-secondary btn-lg disabled" id="submitButton" type="submit">Suscribite</button></div>
-                            </div>
-                            <!-- Submit success message-->
 
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    <p>To activate this form, sign up at</p>
-                                    <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage">
-                                <div class="text-center text-danger mb-3">Error al enviar</div>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -112,14 +84,14 @@
                 <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('imagenes/pizza.jpg')"></div>
                 <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                     <h3>Encontra todos los datos</h3>
-                    <p class="lead mb-0"> ¿Proteinas? ¿carbohidratos? ¿ Grasas totales?</p>
+                    <p class="lead mb-0"> Proteinas - Carbohidratos - Grasas totales</p>
                 </div>
             </div>
             <div class="row g-0">
                 <div class="col-lg-6 text-white showcase-img" style="background-image: url('imagenes/factura.jpg')"></div>
                 <div class="col-lg-6 my-auto showcase-text">
-                    <h3>Ultra Procesados</h3>
-                    <p class="lead mb-0">Descubrí cuales son lo ultrapocesados mas dañinos para el cuerpo</p>
+                    <h3>Alimentos Procesados</h3>
+                    <p class="lead mb-0">Descubrí cuales son dañinos para tu cuerpo</p>
                 </div>
             </div>
             <div class="row g-0">
@@ -137,30 +109,30 @@
             <h3 class="mb-5">¿Cual preferís? </h3>
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-3" src="" alt="..." />
-                        <h5>Carnes rojas</h5>
+                    <div class=" testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid  rounded-circle " src="imagenes/carne.png" alt="icono bife" />
+                        <h5 class="text-white">Carnes rojas</h5>
                         <p class="font-weight-light mb-0"> "Una buena opcion en diferentes cortes"</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-3" src="" alt="..." />
-                        <h5>Pescados</h5>
+                        <img class="img-fluid rounded-circle mb-3" src="imagenes/fish.png" alt=" icono fish" />
+                        <h5 class="text-white">Pescados</h5>
                         <p class="font-weight-light mb-0">" Proteínas y omega 3, ¿que mas podemos pedir?."</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-3" src="" alt="..." />
-                        <h5>Proteinas vegetales</h5>
+                        <img class="img-fluid rounded-circle mb-3" src="imagenes/vegetales.png" alt="icono vegetales" />
+                        <h5 class="text-white">Proteinas vegetales</h5>
                         <p class="font-weight-light mb-0">"Cereales y mas... con gran aporte proteíco"</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-3" src="" alt="..." />
-                        <h5>Whey Protein</h5>
+                        <img class="img-fluid rounded-circle mb-3" src="imagenes/whey.png" alt="icono whey protein" />
+                        <h5 class="text-white">Whey Protein</h5>
                         <p class="font-weight-light mb-0">"Un suplemento interesante que te ayuda acomplementar tu alimentacion"</p>
                     </div>
                 </div>

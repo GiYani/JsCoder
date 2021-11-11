@@ -28,33 +28,28 @@ document.getElementById("btn").addEventListener("click", () => {
 
 })
 
+//dark mode//
 
-$('.theme').click(function() {
-    if ($('input.theme').is(':checked')) {
-        $('.tema').attr('href', 'dark.css')
+$('#Body').toggleClass(localStorage.toggled);
+
+function darkLight() {
+
+    if (localStorage.toggled != 'dark') {
+        $('#Body ').toggleClass('dark', true);
+        $('.tema').attr('href', 'dark.css');
+        localStorage.toggled = "dark";
 
     } else {
-        $('.tema').attr('href', 'light.css')
+        $('#Body').toggleClass('dark', false);
+        $('.tema').attr('href', 'light.css');
+        localStorage.toggled = "";
     }
-
-})
-
-const btnS = document.querySelector('.theme')
-btnS.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
+}
 
 
-
-    if (document.body.classList.contains('dark')) {
-        localStorage.setItem('dark-mode', 'true')
-    } else {
-        localStorage.setItem('dark-mode', 'false')
-    }
-});
-
-
-if (localStorage.getItem('dark-mode') === 'true') {
-    document.body.classList.add('dark');
+if ($('Body').hasClass('dark')) {
+    $('#checkBox').prop("checked", true)
+    $('.tema').attr('href', 'dark.css')
 } else {
-    document.body.classList.remove('dark');
+    $('#checkBox').prop("checked", false)
 }
