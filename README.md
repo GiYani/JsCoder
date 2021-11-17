@@ -1,4 +1,4 @@
 # JsCoder
-proyecto  Tp FinaL JS CODER
-tercer Entrega
+Tp FinaL JS Coder House
+
 
