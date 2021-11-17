@@ -1,7 +1,3 @@
-//
-//
-//
-//
 const imc = () => {
     let peso = document.getElementById("peso").value
     let altura = document.getElementById("altura").value
@@ -30,19 +26,19 @@ document.getElementById("btn").addEventListener("click", () => {
 
 //dark mode//
 
-$('#Body').toggleClass(localStorage.toggled);
+$("#Body").toggleClass(localStorage.darkmode);
 
 function darkLight() {
 
-    if (localStorage.toggled != 'dark') {
-        $('#Body ').toggleClass('dark', true);
-        $('.tema').attr('href', 'dark.css');
-        localStorage.toggled = "dark";
+    if (localStorage.darkmode != "dark") {
+        $("#Body").toggleClass("dark", true);
+        $(".tema").attr("href", "dark.css");
+        localStorage.darkmode = "dark";
 
     } else {
-        $('#Body').toggleClass('dark', false);
-        $('.tema').attr('href', 'light.css');
-        localStorage.toggled = "";
+        $("#Body").toggleClass("dark", false);
+        $(".tema").attr("href", "light.css");
+        localStorage.darkmode = "";
     }
 }
 

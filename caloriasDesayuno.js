@@ -58,29 +58,38 @@ const verificarStorage = () => {
 }
 
 const evento = () => {
-    swal("Tu informacion se  ha guardado, te escribiremos al correo que nos enviaste")
+    if (correo.value === null || correo.value === '') {
+        swal("Ingrese su correo")
 
+
+    } else {
+        swal("Tu informacion se  ha guardado, te escribiremos al correo que nos proporcionaste")
+        guardarDatos()
+    }
 }
+
+
 document.getElementById("btn").addEventListener("click", () => {
-    guardarDatos()
+
     evento()
+
 })
 
-// dark mode//
 
-$('#Body').toggleClass(localStorage.toggled);
+// dark mode//
+$("#Body").toggleClass(localStorage.darkmode);
 
 function darkLight() {
 
-    if (localStorage.toggled != 'dark') {
-        $('#Body ').toggleClass('dark', true);
-        $('.tema').attr('href', 'dark.css');
-        localStorage.toggled = "dark";
+    if (localStorage.darkmode != "dark") {
+        $("#Body").toggleClass("dark", true);
+        $(".tema").attr("href", "dark.css");
+        localStorage.darkmode = "dark";
 
     } else {
-        $('#Body').toggleClass('dark', false);
-        $('.tema').attr('href', 'light.css');
-        localStorage.toggled = "";
+        $("#Body").toggleClass("dark", false);
+        $(".tema").attr("href", "light.css");
+        localStorage.darkmode = "";
     }
 }
 

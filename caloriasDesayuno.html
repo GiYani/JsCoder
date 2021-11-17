@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>contador calorias </title>
+    <title>contador calorías </title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
@@ -27,9 +27,9 @@
                 <p>Body & Health</p>
             </a>
             <label class="switch">
-                <input type="checkbox" class='theme'>
-                <span class="slider round"></span>
-            </label>
+                <input type="checkbox" onclick="darkLight()" id="checkBox" >
+                <span class="slider"></span>
+              </label>
         </div>
     </nav>
     <!-- Masthead-->
@@ -38,10 +38,10 @@
             <div class="row justify-content-center">
                 <div class="col-xl-6">
                     <div class="text-center text-white">
-                        <h3 class="mb-5 text-white " id="titulo">Verificamos las Calorias que consumis en tu desayuno</h3>
+                        <h3 class="mb-5 text-white " id="titulo">Verificamos las Calorías que consumis en tu desayuno</h3>
                         <div class="row">
                             <div class="col-xl-6">
-                                <p class="text-white">Que HC consumis?</p>
+                                <p class="text-white">Que HC consumes?</p>
                                 <input class="form-control form-control-md" id="hidratos" type="text" placeholder="hidrato carbono" />
                             </div>
                             <div class="col-xl-6">
@@ -80,7 +80,7 @@
                         <div class="features-icons-icon d-flex"><img id="cambio3" src="imagenes/peso.png" alt="imagen balanza negra" class=" m-auto"></i>
                         </div>
                         <h3> <a href="hidratos.html">Hidratos de carbono</a></h3>
-                        <p class="lead mb-0">Enterate las caracteristicas de los hidratos complejos y simples </p>
+                        <p class="lead mb-0">Enterate las características de los hidratos complejos y simples </p>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@
         <div class="container position-relative">
             <div class="row justify-content-center">
                 <div class="col-xl-6">
-                    <h2 class="mb-4">¿Queres saber mas?</h2>
+                    <h2 class="mb-4">¿Queres saber más?</h2>
 
                     <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
                         <!-- Email address input-->
@@ -147,7 +147,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="caloriasDesayuno.js"></script>
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>

@@ -28,9 +28,9 @@
                 <p>Body & Health</p>
             </a>
             <label class="switch">
-                <input type="checkbox" class='theme'>
-                <span class="slider round"></span>
-            </label>
+                <input type="checkbox" onclick="darkLight()" id="checkBox" >
+                <span class="slider"></span>
+              </label>
         </div>
     </nav>
     <!-- Masthead-->
@@ -39,15 +39,15 @@
             <div class="row justify-content-center">
                 <div class="col-xl-6">
                     <div class="text-center text-white">
-                        <h3 class="mb-5 text-white" id="titulo">Conoce tu Indice de Masa Corporal </h3>
+                        <h3 class="mb-5 text-white" id="titulo">Conocé tu Indice de Masa Corporal </h3>
                         <div class="row">
                             <div class="col-xl-6">
                                 <p class="text-white">Ingresá tu PESO</p>
-                                <input class="form-control form-control-md" id="peso" type="number" placeholder="peso en Kg" />
+                                <input class="form-control form-control-md" id="peso" type="text" placeholder="peso en Kg" />
                             </div>
                             <div class="col-xl-6">
                                 <p class="text-white">Ingresá tu ALTURA</p>
-                                <input class="form-control form-control-md" id="altura" type="number" placeholder="altura en mt" />
+                                <input class="form-control form-control-md" id="altura" type="text" placeholder="altura en mt" />
                             </div>
 
                             <div class="text-center mt-5"><button class="btn btn-info btn-md text-white" id="btn" type="submit">Enviar</button></div>
@@ -65,8 +65,8 @@
                     <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                         <div class="features-icons-icon d-flex"><img id="cambio2" src="imagenes/fruits.png" alt="imagen frutas negra" class=" m-auto"></i>
                         </div>
-                        <h3> <a href="caloriasDesayuno.html">Calorias en tu desayuno</a></h3>
-                        <p class="lead mb-0">Calculá las calorias de tu primer comida</p>
+                        <h3> <a href="caloriasDesayuno.html">Calorías en tu desayuno</a></h3>
+                        <p class="lead mb-0">Calculá las calorías de tu primer comida</p>
                     </div>
                 </div>
                 <div class="col-lg-4"> </div>
@@ -75,7 +75,7 @@
                         <div class="features-icons-icon d-flex"><img id="cambio3" src="imagenes/peso.png" alt="imagen balanza negra" class=" m-auto"></i>
                         </div>
                         <h3> <a href="hidratos.html">Hidratos complejos</a></h3>
-                        <p class="lead mb-0">Enterate cuales son las caracteristicas de los panificados </p>
+                        <p class="lead mb-0">Enterate cuales son las características de los panificados </p>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@
                                 <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">correo electronico.</div>
                                 <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">email no valido</div>
                             </div>
-                            <div class="col-auto"><button class="btn btn-secondary btn-lg disabled" id="submitButton" type="submit">Suscribite</button></div>
+                            <div class="col-auto"><button class="btn btn-secondary btn-lg disabled" type="submit">Suscribite</button></div>
                         </div>
                         <!-- Submit success message-->
                         <!---->
@@ -142,7 +142,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="imc.js"></script>
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>

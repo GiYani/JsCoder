@@ -27,9 +27,9 @@
                 <p>Body & Health</p>
             </a>
             <label class="switch">
-                <input type="checkbox" class='theme'>
-                <span class="slider round"></span>
-            </label>
+                <input type="checkbox" onclick="darkLight()" id="checkBox" >
+                <span class="slider"></span>
+              </label>
         </div>
     </nav>
     <!-- Masthead-->
@@ -38,9 +38,14 @@
             <div class="row justify-content-center">
                 <div class="col-xl-6">
                     <div class="text-center text-white">
-                        <h3 class="mb-5 text4 text-white id=" titulo ">Hidratos de carbono</h3>
-                        <h4 class="text-white "> PROXIMAMENTE</p4>
-
+                        <h3 class="mb-5 text4 text-white" id="titulo">Hidratos de carbono</h3>
+                        <h4 class="text-white ">Busqueda de Panificados</h4>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <input class="form-control form-control-md" id="busqueda" type="text" placeholder="Panes" />
+                            </div>
+                            <div class="text-center mt-5"><button class="btn btn-info btn-md text-white" id="btn" type="submit">Enviar</button></div>
+                        </div>
                     </div>
                 </div>
     </header>
@@ -50,20 +55,23 @@
             <div class="row ">
                 <div class="col-lg-4 ">
                     <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 ">
-                        <div class="features-icons-icon d-flex "><img id="cambio1 " src="imagenes/body.png " alt="imagen silueta negra " class=" m-auto "></i>
+                        <div class="features-icons-icon d-flex "><img id="cambio1" src="imagenes/body.png " alt="imagen silueta negra " class=" m-auto "></i>
                         </div>
                         <h3><a href="imc.html ">I.M.C</a></h3>
                         <p class="lead mb-0 ">Conocé tu indice de masa corporal</p>
                     </div>
                 </div>
                 <div class="col-lg-4 "></div>
-                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 ">
-                    <div class="features-icons-icon d-flex "><img id="cambio2 " src="imagenes/fruits.png " alt="imagen frutas negra " class=" m-auto "></i>
+                <div class="col-lg-4 ">
+                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 ">
+                        <div class="features-icons-icon d-flex "><img id="cambio2" src="imagenes/fruits.png " alt="imagen frutas negra " class=" m-auto "></i>
+                        </div>
+                        <h3> <a href="caloriasDesayuno.html ">Calorías en tu desayuno</a></h3>
+                        <p class="lead mb-0 ">Calculá las calorías de tu primer comida</p>
+
                     </div>
-                    <h3> <a href="caloriasDesayuno.html ">Calorias en tu desayuno</a></h3>
-                    <p class="lead mb-0 ">Calculá las calorias de tu primer comida</p>
                 </div>
-           </div>
+            </div>
         </div>
     </section>
 
@@ -71,33 +79,9 @@
         <div class="container position-relative ">
             <div class="row justify-content-center ">
                 <div class="col-xl-6 ">
-                    <h2 class="mb-4 ">¿Queres saber mas?</h2>
+                    <h2 class="mb-4 ">¿Queres saber más?</h2>
 
-                    <form class="form-subscribe " id="contactFormFooter " data-sb-form-api-token="API_TOKEN ">
-                        <!-- Email address input-->
-                        <div class="row ">
-                            <div class="col ">
-                                <input class="form-control form-control-lg " id="emailAddressBelow " type="email " placeholder="Email " data-sb-validations="required,email " />
-                                <div class="invalid-feedback text-white " data-sb-feedback="emailAddressBelow:required ">correo electronico.</div>
-                                <div class="invalid-feedback text-white " data-sb-feedback="emailAddressBelow:email ">email no valido</div>
-                            </div>
-                            <div class="col-auto "><button class="btn btn-secondary btn-lg disabled " id="submitButton " type="submit ">Suscribite</button></div>
-                        </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none " id="submitSuccessMessage ">
 
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none " id="submitErrorMessage ">
-                            <div class="text-center text-danger mb-3 ">Error enviar el mensaje!</div>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
@@ -127,8 +111,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js "></script>
     <!-- Core theme JS-->
     <script src="hidratos.js "></script>
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js "></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
 </body>
